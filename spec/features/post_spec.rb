@@ -26,4 +26,11 @@ describe "navigate" do
         expect(page).to have_css("h1", text: "My Post")
     end
 
+    it "shows the description with p tag" do 
+
+        visit "/posts/#{@post.id}"
+        expect(page).to have_css("p", text:"My post desc")
+
+    end
+
 end
