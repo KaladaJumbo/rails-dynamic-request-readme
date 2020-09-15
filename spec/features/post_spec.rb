@@ -23,7 +23,7 @@ describe "navigate" do
 
     it "shows the title with h1 tag" do
         visit "/posts/#{@post.id}"
-        expect(page).to have_css("h1,", text: "My Post")
+        expect(page).to have_css("h1", text: "My Post")
     end
 
 end
